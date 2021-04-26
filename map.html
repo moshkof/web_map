@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_07e5ce178e8846328264067c23f62500 {
+                #map_bab1265e38404249a8781d1bcfaf5f03 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,15 +35,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_07e5ce178e8846328264067c23f62500" ></div>
+            <div class="folium-map" id="map_bab1265e38404249a8781d1bcfaf5f03" ></div>
         
 </body>
 <script>    
     
-            var map_07e5ce178e8846328264067c23f62500 = L.map(
-                "map_07e5ce178e8846328264067c23f62500",
+            var map_bab1265e38404249a8781d1bcfaf5f03 = L.map(
+                "map_bab1265e38404249a8781d1bcfaf5f03",
                 {
-                    center: [59.803338, 30.377412],
+                    center: [59.807602, 30.379634],
                     crs: L.CRS.EPSG3857,
                     zoom: 17,
                     zoomControl: true,
@@ -55,9 +55,34 @@
 
         
     
-            var tile_layer_65fa24fdc84948fd9b01d913fbd06a25 = L.tileLayer(
+            var tile_layer_0591f716b704479ea70479632adc2050 = L.tileLayer(
                 "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
                 {"attribution": "toner-bcg", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_07e5ce178e8846328264067c23f62500);
+            ).addTo(map_bab1265e38404249a8781d1bcfaf5f03);
         
+    
+            var marker_bb17af15256b456a856548243896443b = L.marker(
+                [59.807602, 30.379634],
+                {}
+            ).addTo(map_bab1265e38404249a8781d1bcfaf5f03);
+        
+    
+            var icon_2e662d63392f4d72833ee23835b619b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bb17af15256b456a856548243896443b.setIcon(icon_2e662d63392f4d72833ee23835b619b0);
+        
+    
+        var popup_978d0bb0a675432dbd43413d886d0c1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3dd8f4726a4d4988a38dd8be99bb9512 = $(`<div id="html_3dd8f4726a4d4988a38dd8be99bb9512" style="width: 100.0%; height: 100.0%;">Привет!Здесь живу я!</div>`)[0];
+            popup_978d0bb0a675432dbd43413d886d0c1e.setContent(html_3dd8f4726a4d4988a38dd8be99bb9512);
+        
+
+        marker_bb17af15256b456a856548243896443b.bindPopup(popup_978d0bb0a675432dbd43413d886d0c1e)
+        ;
+
+        
+    
 </script>
