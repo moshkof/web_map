@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_4e7a2fd521604f099789493dbeafbe0b {
+                #map_aa3290411cc446a9ad5f7ec2fd8504cb {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,13 +35,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_4e7a2fd521604f099789493dbeafbe0b" ></div>
+            <div class="folium-map" id="map_aa3290411cc446a9ad5f7ec2fd8504cb" ></div>
         
 </body>
 <script>    
     
-            var map_4e7a2fd521604f099789493dbeafbe0b = L.map(
-                "map_4e7a2fd521604f099789493dbeafbe0b",
+            var map_aa3290411cc446a9ad5f7ec2fd8504cb = L.map(
+                "map_aa3290411cc446a9ad5f7ec2fd8504cb",
                 {
                     center: [59.807602, 30.379634],
                     crs: L.CRS.EPSG3857,
@@ -55,50 +55,75 @@
 
         
     
-            var tile_layer_306c55a03c3842f495aa2d85bc7d0a79 = L.tileLayer(
+            var tile_layer_8424fe3281d14869b7f4661fa4bf54b0 = L.tileLayer(
                 "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
                 {"attribution": "toner-bcg", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_4e7a2fd521604f099789493dbeafbe0b);
+            ).addTo(map_aa3290411cc446a9ad5f7ec2fd8504cb);
         
     
-            var feature_group_b3014e5764834f72bdbf04d88ec496b7 = L.featureGroup(
+            var feature_group_47aa0fc3638d4e52b41775bdd8e1b9aa = L.featureGroup(
                 {}
-            ).addTo(map_4e7a2fd521604f099789493dbeafbe0b);
+            ).addTo(map_aa3290411cc446a9ad5f7ec2fd8504cb);
         
     
-            var marker_18e1fdcb0f154ea8b3532bed8c131adf = L.marker(
+            var marker_2d307f471efe48d287cb6d4fd596290a = L.marker(
                 [59.807602, 30.379634],
                 {}
-            ).addTo(feature_group_b3014e5764834f72bdbf04d88ec496b7);
+            ).addTo(feature_group_47aa0fc3638d4e52b41775bdd8e1b9aa);
         
     
-            var icon_2bf234170faa44a9aa62e93d8223f214 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_bcf38f37675044a4bea05061293f1e8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_18e1fdcb0f154ea8b3532bed8c131adf.setIcon(icon_2bf234170faa44a9aa62e93d8223f214);
+            marker_2d307f471efe48d287cb6d4fd596290a.setIcon(icon_bcf38f37675044a4bea05061293f1e8b);
         
     
-        var popup_bed16e2a925c4a2193a7128254e2a780 = L.popup({"maxWidth": "100%"});
+        var popup_a6c4c5ebd493403ebb54f004cc2a7159 = L.popup({"maxWidth": "100%"});
 
         
-            var html_e8f0a66b580d4bfa81c187d0cda9d74d = $(`<div id="html_e8f0a66b580d4bfa81c187d0cda9d74d" style="width: 100.0%; height: 100.0%;">Привет!Здесь живу я!</div>`)[0];
-            popup_bed16e2a925c4a2193a7128254e2a780.setContent(html_e8f0a66b580d4bfa81c187d0cda9d74d);
+            var html_7e513c55edcd4e399d14d7d88fb4a67c = $(`<div id="html_7e513c55edcd4e399d14d7d88fb4a67c" style="width: 100.0%; height: 100.0%;">Привет!Здесь живу я!</div>`)[0];
+            popup_a6c4c5ebd493403ebb54f004cc2a7159.setContent(html_7e513c55edcd4e399d14d7d88fb4a67c);
         
 
-        marker_18e1fdcb0f154ea8b3532bed8c131adf.bindPopup(popup_bed16e2a925c4a2193a7128254e2a780)
+        marker_2d307f471efe48d287cb6d4fd596290a.bindPopup(popup_a6c4c5ebd493403ebb54f004cc2a7159)
         ;
 
         
     
     
-                var lat_lng_popup_4801f5f51a9349cfbec5aa31d6926005 = L.popup();
+            var marker_158114f13e1b40e8bc24467458309737 = L.marker(
+                [59.807602, 30.38],
+                {}
+            ).addTo(feature_group_47aa0fc3638d4e52b41775bdd8e1b9aa);
+        
+    
+            var icon_e2faa28d4c4d48cda8077bcc2a0ff62c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_158114f13e1b40e8bc24467458309737.setIcon(icon_e2faa28d4c4d48cda8077bcc2a0ff62c);
+        
+    
+        var popup_541e6ccc24c74158a9b5fc8d21793021 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_840a391c9465499ba6a0fa335f58baf3 = $(`<div id="html_840a391c9465499ba6a0fa335f58baf3" style="width: 100.0%; height: 100.0%;">Привет!Здесь живу я!</div>`)[0];
+            popup_541e6ccc24c74158a9b5fc8d21793021.setContent(html_840a391c9465499ba6a0fa335f58baf3);
+        
+
+        marker_158114f13e1b40e8bc24467458309737.bindPopup(popup_541e6ccc24c74158a9b5fc8d21793021)
+        ;
+
+        
+    
+    
+                var lat_lng_popup_c492127456224fe397b0812f2d9bb21f = L.popup();
                 function latLngPop(e) {
-                    lat_lng_popup_4801f5f51a9349cfbec5aa31d6926005
+                    lat_lng_popup_c492127456224fe397b0812f2d9bb21f
                         .setLatLng(e.latlng)
                         .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
                                     "<br>Longitude: " + e.latlng.lng.toFixed(4))
-                        .openOn(map_4e7a2fd521604f099789493dbeafbe0b);
+                        .openOn(map_aa3290411cc446a9ad5f7ec2fd8504cb);
                     }
-                map_4e7a2fd521604f099789493dbeafbe0b.on('click', latLngPop);
+                map_aa3290411cc446a9ad5f7ec2fd8504cb.on('click', latLngPop);
             
 </script>
