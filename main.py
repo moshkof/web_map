@@ -1,10 +1,13 @@
 import folium
 import pandas
 
+# data = pandas.read_csv("Volcanoes_USA.txt")
 data = pandas.read_csv("Volcanoes_USA.txt")
+print(data)
 lat = list(data.LAT)
 lon = list(data.LON)
 elv = list(data.ELEV)
+name = list(data.NAME)
 
 maps = folium.Map(location=[59.807602, 30.379634], zoom_start=17, tiles='https://server.arcgisonline.com/ArcGIS/rest'
                                                                         '/services/World_Imagery/MapServer/tile/{z}/{'
